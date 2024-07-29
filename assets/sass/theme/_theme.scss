@@ -938,6 +938,13 @@ body {
 //dresses-section 
 .dresses-section {
     .sort-dresses {
+
+        h5 {
+            @include tablet {
+                margin-bottom: 10px;
+            }
+        }
+
         select {
             width: 100%;
             padding: 25px 22px;
@@ -948,10 +955,24 @@ body {
             background-size: 20px;
             background-position: 90% 50%;
             cursor: pointer;
+
+            @include tablet {
+                padding: 10px 10px;
+                background-size: 15px;
+            }
         }
     }
 
     .price-dresses {
+        @include tablet {
+            margin-top: 30px;
+        }
+
+        h5 {
+            @include tablet {
+                margin-bottom: 10px;
+            }
+        }
 
         .range-slider {
             position: relative;
@@ -1030,6 +1051,16 @@ body {
     }
 
     .availability-dresses {
+        @include tablet {
+            margin-top: 30px;
+        }
+
+        h5 {
+            @include tablet {
+                margin-bottom: 10px;
+            }
+        }
+
         .chackbox {
             display: flex;
 
@@ -1048,6 +1079,16 @@ body {
     }
 
     .color-dresses {
+        @include tablet {
+            margin-top: 30px;
+        }
+
+        h5 {
+            @include tablet {
+                margin-bottom: 10px;
+            }
+        }
+
         ul {
             li {
                 a {
@@ -1118,6 +1159,16 @@ body {
     }
 
     .size-dresses {
+        @include tablet {
+            margin-top: 30px;
+        }
+
+        h5 {
+            @include tablet {
+                margin-bottom: 10px;
+            }
+        }
+
         .chackbox {
             display: flex;
 
@@ -1132,6 +1183,14 @@ body {
                     color: $primary-color;
                 }
             }
+        }
+    }
+
+    .single-slider {
+        margin-right: 0;
+        margin-bottom: 70px;
+        @include tablet{
+            margin-bottom: 40px;
         }
     }
 }

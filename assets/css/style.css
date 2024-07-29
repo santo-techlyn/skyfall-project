@@ -1934,6 +1934,11 @@ body {
   overflow-x: hidden;
 }
 
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .dresses-section .sort-dresses h5 {
+    margin-bottom: 10px;
+  }
+}
 .dresses-section .sort-dresses select {
   width: 100%;
   padding: 25px 22px;
@@ -1944,6 +1949,22 @@ body {
   background-size: 20px;
   background-position: 90% 50%;
   cursor: pointer;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .dresses-section .sort-dresses select {
+    padding: 10px 10px;
+    background-size: 15px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .dresses-section .price-dresses {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .dresses-section .price-dresses h5 {
+    margin-bottom: 10px;
+  }
 }
 .dresses-section .price-dresses .range-slider {
   position: relative;
@@ -2011,6 +2032,16 @@ body {
   color: #252525;
   font-weight: 500;
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .dresses-section .availability-dresses {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .dresses-section .availability-dresses h5 {
+    margin-bottom: 10px;
+  }
+}
 .dresses-section .availability-dresses .chackbox {
   display: flex;
 }
@@ -2023,6 +2054,16 @@ body {
 .dresses-section .availability-dresses .chackbox .chackbox-content span {
   margin-bottom: 0;
   color: #252525;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .dresses-section .color-dresses {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .dresses-section .color-dresses h5 {
+    margin-bottom: 10px;
+  }
 }
 .dresses-section .color-dresses ul li {
   margin-top: 15px;
@@ -2070,6 +2111,16 @@ body {
   width: 200px;
   justify-content: space-between;
 }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .dresses-section .size-dresses {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .dresses-section .size-dresses h5 {
+    margin-bottom: 10px;
+  }
+}
 .dresses-section .size-dresses .chackbox {
   display: flex;
 }
@@ -2082,4 +2133,13 @@ body {
 .dresses-section .size-dresses .chackbox .chackbox-content span {
   margin-bottom: 0;
   color: #252525;
+}
+.dresses-section .single-slider {
+  margin-right: 0;
+  margin-bottom: 70px;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .dresses-section .single-slider {
+    margin-bottom: 40px;
+  }
 }/*# sourceMappingURL=style.css.map */
