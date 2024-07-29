@@ -1,11 +1,10 @@
 /* button */
-.primary-btn {
+.primary-btn{
     color: $paragraph-color;
     background-color: $white-color;
     padding: 22px 48px;
     font-size: 18px;
     font-weight: 600;
+    text-transform: uppercase;
 }
-.btn-change-color{
-    background-color: red;
-}
+

@@ -74,6 +74,13 @@
         padding-top: 80px;
     }
 }
+.pt-150 {
+    padding-top: 150px;
+
+    @include all-phone {
+        padding-top: 80px;
+    }
+}
 
 .pb-10 {
     padding-bottom: 10px;
@@ -253,6 +260,9 @@
 // margin
 .mt-10 {
     margin-top: 10px;
+}
+.mt-15 {
+    margin-top: 15px;
 }
 
 .mt-20 {
