@@ -818,6 +818,17 @@
             }
         }
     }
+
+    .blog-body {
+        h3 {
+            cursor: pointer;
+
+            &:hover {
+                text-decoration: underline;
+                transition: $transition;
+            }
+        }
+    }
 }
 
 // gallary-section
@@ -958,6 +969,10 @@ body {
             margin-top: 30px;
         }
 
+        @include all-phone {
+            margin-top: 30px;
+        }
+
         h5 {
             @include tablet {
                 margin-bottom: 10px;
@@ -1045,6 +1060,10 @@ body {
             margin-top: 30px;
         }
 
+        @include all-phone {
+            margin-top: 30px;
+        }
+
         h5 {
             @include tablet {
                 margin-bottom: 10px;
@@ -1070,6 +1089,10 @@ body {
 
     .color-dresses {
         @include tablet {
+            margin-top: 30px;
+        }
+
+        @include all-phone {
             margin-top: 30px;
         }
 
@@ -1151,6 +1174,14 @@ body {
     .size-dresses {
         @include tablet {
             margin-top: 30px;
+        }
+
+        @include all-phone {
+            margin-top: 30px;
+        }
+
+        @include all-phone {
+            margin-bottom: 40px;
         }
 
         h5 {
@@ -1284,7 +1315,12 @@ body {
                 }
             }
         }
+    }
+}
 
-
+// about-section
+.about-section {
+    @include screen-360 {
+        padding: 50px 0;
     }
 }

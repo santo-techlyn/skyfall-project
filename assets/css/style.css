@@ -1873,6 +1873,13 @@ nav .main-menu li a::before {
   text-decoration: underline;
   transition: all 0.5s ease;
 }
+.single-blog .blog-body h3 {
+  cursor: pointer;
+}
+.single-blog .blog-body h3:hover {
+  text-decoration: underline;
+  transition: all 0.5s ease;
+}
 
 .gallary-section .gallery {
   display: flex;
@@ -1987,6 +1994,11 @@ body {
     margin-top: 30px;
   }
 }
+@media (max-width: 767.98px) {
+  .dresses-section .price-dresses {
+    margin-top: 30px;
+  }
+}
 @media (min-width: 768px) and (max-width: 991.98px) {
   .dresses-section .price-dresses h5 {
     margin-bottom: 10px;
@@ -2063,6 +2075,11 @@ body {
     margin-top: 30px;
   }
 }
+@media (max-width: 767.98px) {
+  .dresses-section .availability-dresses {
+    margin-top: 30px;
+  }
+}
 @media (min-width: 768px) and (max-width: 991.98px) {
   .dresses-section .availability-dresses h5 {
     margin-bottom: 10px;
@@ -2082,6 +2099,11 @@ body {
   color: #252525;
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .dresses-section .color-dresses {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767.98px) {
   .dresses-section .color-dresses {
     margin-top: 30px;
   }
@@ -2140,6 +2162,16 @@ body {
 @media (min-width: 768px) and (max-width: 991.98px) {
   .dresses-section .size-dresses {
     margin-top: 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .dresses-section .size-dresses {
+    margin-top: 30px;
+  }
+}
+@media (max-width: 767.98px) {
+  .dresses-section .size-dresses {
+    margin-bottom: 40px;
   }
 }
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -2246,5 +2278,11 @@ body {
     margin-left: 0;
     width: 220px;
     padding: 22px 60px;
+  }
+}
+
+@media (max-width: 360px) {
+  .about-section {
+    padding: 50px 0;
   }
 }/*# sourceMappingURL=style.css.map */
