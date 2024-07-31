@@ -1414,6 +1414,13 @@ body {
 
 // blog_hero-section
 .blog_hero-section {
+    @include tablet {
+        padding: 40px 0;
+    }
+    @include all-phone {
+        padding: 40px 0;
+    }
+
     .blog_hero-title {
         text-align: center;
 
