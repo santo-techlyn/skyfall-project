@@ -1324,3 +1324,37 @@ body {
         padding: 50px 0;
     }
 }
+
+//search-section
+.search-section {
+    .search-title {
+        text-align: center;
+    }
+
+    .search-input {
+        position: relative;
+
+        @include tablet {
+            margin-top: 20px;
+        }
+
+        @include all-phone {
+            margin-top: 15px;
+        }
+
+        input {
+            width: 100%;
+            background-color: transparent;
+            border: 0;
+            border-bottom: 1px solid $primary-color;
+            padding: 15px 45px;
+        }
+
+        span {
+            position: absolute;
+            top: 30%;
+            left: 15px;
+        }
+    }
+}
+

@@ -2285,4 +2285,33 @@ body {
   .about-section {
     padding: 50px 0;
   }
+}
+
+.search-section .search-title {
+  text-align: center;
+}
+.search-section .search-input {
+  position: relative;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .search-section .search-input {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 767.98px) {
+  .search-section .search-input {
+    margin-top: 15px;
+  }
+}
+.search-section .search-input input {
+  width: 100%;
+  background-color: transparent;
+  border: 0;
+  border-bottom: 1px solid #252525;
+  padding: 15px 45px;
+}
+.search-section .search-input span {
+  position: absolute;
+  top: 30%;
+  left: 15px;
 }/*# sourceMappingURL=style.css.map */
