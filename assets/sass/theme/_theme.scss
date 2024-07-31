@@ -1417,6 +1417,7 @@ body {
     @include tablet {
         padding: 40px 0;
     }
+
     @include all-phone {
         padding: 40px 0;
     }
@@ -1445,17 +1446,107 @@ body {
 }
 
 // blog_details-section
-.blog_details-section{
-    .blog_details-title{
+.blog_details-section {
+    @include all-phone {
+        padding: 50px 0;
+    }
+    .blog_details-title {
         text-align: center;
-        a{
+
+        @include all-phone {
+            text-align: start;
+        }
+
+        a {
             color: $primary-color2;
-            &:hover{
+
+            &:hover {
                 color: $primary-color;
+                font-weight: 600;
             }
         }
-        .posted{
+
+        .posted {
             margin-left: 40px;
+            @include portrait-phone{
+                margin-left: 0;
+                display: block;
+            }
+        }
+    }
+
+    .blog_details-content {
+
+        p {
+            line-height: 32px;
+            color: $primary-color2;
+            margin-top: 35px;
+        }
+
+        .blog_details-icons {
+            display: flex;
+            align-items: center;
+
+            ul {
+                display: flex;
+                margin-left: 25px;
+
+                li {
+                    margin-right: 30px;
+
+                    a {
+                        font-size: 22px;
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    .comments-available {
+        .name-date {
+            display: flex;
+            justify-content: space-between;
+
+            .name {
+                font-weight: 600;
+            }
+
+            .date {
+                font-weight: 600;
+            }
+        }
+    }
+
+    .comment {
+        form {
+            input {
+                width: 100%;
+                border: 0;
+                border-bottom: 1px solid $primary-color;
+                margin-bottom: 50px;
+                padding-bottom: 20px;
+
+                &::placeholder {
+                    color: $primary-color;
+                    font-weight: 500;
+                }
+            }
+
+            textarea {
+                width: 100%;
+                border: 0;
+                border-bottom: 1px solid $primary-color;
+                padding-bottom: 120px;
+                @include all-phone{
+                    padding-bottom: 40px;
+                }
+
+                &::placeholder {
+                    color: $primary-color;
+                    font-weight: 500;
+                }
+            }
         }
     }
 }

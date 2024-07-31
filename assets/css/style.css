@@ -2390,15 +2390,96 @@ body {
   color: #8B837D;
 }
 
+@media (max-width: 767.98px) {
+  .blog_details-section {
+    padding: 50px 0;
+  }
+}
 .blog_details-section .blog_details-title {
   text-align: center;
+}
+@media (max-width: 767.98px) {
+  .blog_details-section .blog_details-title {
+    text-align: start;
+  }
 }
 .blog_details-section .blog_details-title a {
   color: #8B837D;
 }
 .blog_details-section .blog_details-title a:hover {
   color: #252525;
+  font-weight: 600;
 }
 .blog_details-section .blog_details-title .posted {
   margin-left: 40px;
+}
+@media (max-width: 575.98px) {
+  .blog_details-section .blog_details-title .posted {
+    margin-left: 0;
+    display: block;
+  }
+}
+.blog_details-section .blog_details-content p {
+  line-height: 32px;
+  color: #8B837D;
+  margin-top: 35px;
+}
+.blog_details-section .blog_details-content .blog_details-icons {
+  display: flex;
+  align-items: center;
+}
+.blog_details-section .blog_details-content .blog_details-icons ul {
+  display: flex;
+  margin-left: 25px;
+}
+.blog_details-section .blog_details-content .blog_details-icons ul li {
+  margin-right: 30px;
+}
+.blog_details-section .blog_details-content .blog_details-icons ul li a {
+  font-size: 22px;
+  color: #252525;
+}
+.blog_details-section .comments-available .name-date {
+  display: flex;
+  justify-content: space-between;
+}
+.blog_details-section .comments-available .name-date .name {
+  font-weight: 600;
+}
+.blog_details-section .comments-available .name-date .date {
+  font-weight: 600;
+}
+.blog_details-section .comment form input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #252525;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+.blog_details-section .comment form input::-moz-placeholder {
+  color: #252525;
+  font-weight: 500;
+}
+.blog_details-section .comment form input::placeholder {
+  color: #252525;
+  font-weight: 500;
+}
+.blog_details-section .comment form textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #252525;
+  padding-bottom: 120px;
+}
+@media (max-width: 767.98px) {
+  .blog_details-section .comment form textarea {
+    padding-bottom: 40px;
+  }
+}
+.blog_details-section .comment form textarea::-moz-placeholder {
+  color: #252525;
+  font-weight: 500;
+}
+.blog_details-section .comment form textarea::placeholder {
+  color: #252525;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
