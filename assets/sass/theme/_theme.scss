@@ -1443,3 +1443,19 @@ body {
         }
     }
 }
+
+// blog_details-section
+.blog_details-section{
+    .blog_details-title{
+        text-align: center;
+        a{
+            color: $primary-color2;
+            &:hover{
+                color: $primary-color;
+            }
+        }
+        .posted{
+            margin-left: 40px;
+        }
+    }
+}

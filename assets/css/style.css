@@ -2388,4 +2388,17 @@ body {
 }
 .blog_hero-section .blog_hero-content p {
   color: #8B837D;
+}
+
+.blog_details-section .blog_details-title {
+  text-align: center;
+}
+.blog_details-section .blog_details-title a {
+  color: #8B837D;
+}
+.blog_details-section .blog_details-title a:hover {
+  color: #252525;
+}
+.blog_details-section .blog_details-title .posted {
+  margin-left: 40px;
 }/*# sourceMappingURL=style.css.map */
