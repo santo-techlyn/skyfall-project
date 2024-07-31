@@ -1358,3 +1358,53 @@ body {
     }
 }
 
+// sign_up & login section
+.sign_up-section {
+    .sign_up-img {
+        @include tablet{
+            margin-top: 50px;
+        }
+        @include all-phone{
+            margin-top: 50px;
+        }
+    }
+
+    .sign_up-content {
+        @include tablet{
+            margin-top: 50px;
+        }
+        @include all-phone{
+            margin-top: 50px;
+        }
+        span {
+            color: $primary-color2;
+
+            a {
+                color: $primary-color;
+                font-weight: 600;
+
+                &:hover {
+                    text-decoration: underline;
+                    transition: $transition;
+                }
+            }
+        }
+
+        form {
+            margin-top: 45px;
+
+            input {
+                display: block;
+                width: 100%;
+                padding-bottom: 20px;
+                border: 0;
+                border-bottom: 1px solid $primary-color;
+                margin-bottom: 45px;
+
+                &::placeholder {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}

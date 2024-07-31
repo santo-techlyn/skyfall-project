@@ -2314,4 +2314,53 @@ body {
   position: absolute;
   top: 30%;
   left: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .sign_up-section .sign_up-img {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 767.98px) {
+  .sign_up-section .sign_up-img {
+    margin-top: 50px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .sign_up-section .sign_up-content {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 767.98px) {
+  .sign_up-section .sign_up-content {
+    margin-top: 50px;
+  }
+}
+.sign_up-section .sign_up-content span {
+  color: #8B837D;
+}
+.sign_up-section .sign_up-content span a {
+  color: #252525;
+  font-weight: 600;
+}
+.sign_up-section .sign_up-content span a:hover {
+  text-decoration: underline;
+  transition: all 0.5s ease;
+}
+.sign_up-section .sign_up-content form {
+  margin-top: 45px;
+}
+.sign_up-section .sign_up-content form input {
+  display: block;
+  width: 100%;
+  padding-bottom: 20px;
+  border: 0;
+  border-bottom: 1px solid #252525;
+  margin-bottom: 45px;
+}
+.sign_up-section .sign_up-content form input::-moz-placeholder {
+  color: #252525;
+}
+.sign_up-section .sign_up-content form input::placeholder {
+  color: #252525;
 }/*# sourceMappingURL=style.css.map */
