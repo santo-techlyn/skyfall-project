@@ -2363,4 +2363,19 @@ body {
 }
 .sign_up-section .sign_up-content form input::placeholder {
   color: #252525;
+}
+
+.blog_hero-section .blog_hero-title {
+  text-align: center;
+}
+.blog_hero-section .blog_hero-title span a {
+  color: #8B837D;
+}
+.blog_hero-section .blog_hero-title span a:hover {
+  text-decoration: underline;
+  color: #252525;
+  font-weight: 600;
+}
+.blog_hero-section .blog_hero-content p {
+  color: #8B837D;
 }/*# sourceMappingURL=style.css.map */

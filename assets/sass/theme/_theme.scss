@@ -1361,21 +1361,24 @@ body {
 // sign_up & login section
 .sign_up-section {
     .sign_up-img {
-        @include tablet{
+        @include tablet {
             margin-top: 50px;
         }
-        @include all-phone{
+
+        @include all-phone {
             margin-top: 50px;
         }
     }
 
     .sign_up-content {
-        @include tablet{
+        @include tablet {
             margin-top: 50px;
         }
-        @include all-phone{
+
+        @include all-phone {
             margin-top: 50px;
         }
+
         span {
             color: $primary-color2;
 
@@ -1405,6 +1408,31 @@ body {
                     color: $primary-color;
                 }
             }
+        }
+    }
+}
+
+// blog_hero-section
+.blog_hero-section {
+    .blog_hero-title {
+        text-align: center;
+
+        span {
+            a {
+                color: $primary-color2;
+
+                &:hover {
+                    text-decoration: underline;
+                    color: $primary-color;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+    .blog_hero-content {
+        p {
+            color: $primary-color2;
         }
     }
 }
