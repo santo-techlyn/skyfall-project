@@ -163,6 +163,15 @@ nav {
             }
         }
     }
+    .menu-area-wraper{
+        border-bottom: 1px solid $primary-color2;
+        @include tablet{
+            border-bottom: 0;
+        }
+        @include all-phone{
+            border-bottom: 0;
+        }
+    }
 }
 
 // phone menu

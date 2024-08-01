@@ -263,6 +263,19 @@ nav .main-menu li a::before {
     font-size: 14px;
   }
 }
+.menu-area .menu-area-wraper {
+  border-bottom: 1px solid #8B837D;
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .menu-area .menu-area-wraper {
+    border-bottom: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .menu-area .menu-area-wraper {
+    border-bottom: 0;
+  }
+}
 
 .mean-container .mean-nav {
   background: #252525;
@@ -665,6 +678,41 @@ nav .main-menu li a::before {
 }
 
 /* form */
+.form2 input {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #252525;
+  margin-bottom: 50px;
+  padding-bottom: 20px;
+}
+.form2 input::-moz-placeholder {
+  color: #252525;
+  font-weight: 500;
+}
+.form2 input::placeholder {
+  color: #252525;
+  font-weight: 500;
+}
+.form2 textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #252525;
+  padding-bottom: 120px;
+}
+@media (max-width: 767.98px) {
+  .form2 textarea {
+    padding-bottom: 40px;
+  }
+}
+.form2 textarea::-moz-placeholder {
+  color: #252525;
+  font-weight: 500;
+}
+.form2 textarea::placeholder {
+  color: #252525;
+  font-weight: 500;
+}
+
 /* preloader */
 #preloader {
   position: fixed;
@@ -1686,7 +1734,8 @@ nav .main-menu li a::before {
     padding-bottom: 10px;
   }
 }
-.faq-section ul.accordion-list {
+
+ul.accordion-list {
   position: relative;
   display: block;
   width: 100%;
@@ -1694,7 +1743,7 @@ nav .main-menu li a::before {
   margin: 0;
   list-style: none;
 }
-.faq-section ul.accordion-list li {
+ul.accordion-list li {
   position: relative;
   display: block;
   width: 100%;
@@ -1706,10 +1755,10 @@ nav .main-menu li a::before {
   border-radius: 5px;
   cursor: pointer;
 }
-.faq-section ul.accordion-list li.active h4:after {
+ul.accordion-list li.active h4:after {
   transform: rotate(45deg);
 }
-.faq-section ul.accordion-list li h4 {
+ul.accordion-list li h4 {
   position: relative;
   display: block;
   width: 100%;
@@ -1720,7 +1769,7 @@ nav .main-menu li a::before {
   letter-spacing: 0.01em;
   cursor: pointer;
 }
-.faq-section ul.accordion-list li h4:after {
+ul.accordion-list li h4:after {
   content: "";
   font-family: "material-design-iconic-font";
   position: absolute;
@@ -1730,13 +1779,13 @@ nav .main-menu li a::before {
   transition: all 0.3s ease-in-out;
   font-size: 18px;
 }
-.faq-section ul.accordion-list li h4 svg {
+ul.accordion-list li h4 svg {
   width: 20px;
   position: absolute;
   right: 0;
   top: 0;
 }
-.faq-section ul.accordion-list li div.answer {
+ul.accordion-list li div.answer {
   position: relative;
   display: block;
   width: 100%;
@@ -1745,7 +1794,7 @@ nav .main-menu li a::before {
   padding: 0;
   cursor: pointer;
 }
-.faq-section ul.accordion-list li div.answer p {
+ul.accordion-list li div.answer p {
   position: relative;
   display: block;
   font-weight: 300;
@@ -2347,23 +2396,6 @@ body {
   text-decoration: underline;
   transition: all 0.5s ease;
 }
-.sign_up-section .sign_up-content form {
-  margin-top: 45px;
-}
-.sign_up-section .sign_up-content form input {
-  display: block;
-  width: 100%;
-  padding-bottom: 20px;
-  border: 0;
-  border-bottom: 1px solid #252525;
-  margin-bottom: 45px;
-}
-.sign_up-section .sign_up-content form input::-moz-placeholder {
-  color: #252525;
-}
-.sign_up-section .sign_up-content form input::placeholder {
-  color: #252525;
-}
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .blog_hero-section {
@@ -2449,40 +2481,6 @@ body {
 .blog_details-section .comments-available .name-date .date {
   font-weight: 600;
 }
-.blog_details-section .comment form input {
-  width: 100%;
-  border: 0;
-  border-bottom: 1px solid #252525;
-  margin-bottom: 50px;
-  padding-bottom: 20px;
-}
-.blog_details-section .comment form input::-moz-placeholder {
-  color: #252525;
-  font-weight: 500;
-}
-.blog_details-section .comment form input::placeholder {
-  color: #252525;
-  font-weight: 500;
-}
-.blog_details-section .comment form textarea {
-  width: 100%;
-  border: 0;
-  border-bottom: 1px solid #252525;
-  padding-bottom: 120px;
-}
-@media (max-width: 767.98px) {
-  .blog_details-section .comment form textarea {
-    padding-bottom: 40px;
-  }
-}
-.blog_details-section .comment form textarea::-moz-placeholder {
-  color: #252525;
-  font-weight: 500;
-}
-.blog_details-section .comment form textarea::placeholder {
-  color: #252525;
-  font-weight: 500;
-}
 
 .cart-section .cart-title {
   text-align: center;
@@ -2563,4 +2561,28 @@ body {
 }
 .cart-section .btn-group .button3 {
   margin-right: 20px;
+}
+
+.faq-page-section .faq-page-title {
+  text-align: center;
+}
+.faq-page-section .faq-page-title a {
+  color: #8B837D;
+}
+.faq-page-section .faq-page-title a:hover {
+  color: #252525;
+  font-weight: 600;
+}
+
+.contact-section .content-info p span {
+  margin-left: 20px;
+}
+.contact-section .content-info .contact {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.contact-section .content-info .contact .contact-value span {
+  display: block;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */

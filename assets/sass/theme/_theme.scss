@@ -625,84 +625,84 @@
             padding-bottom: 10px;
         }
     }
+}
 
-    ul.accordion-list {
+ul.accordion-list {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    list-style: none;
+
+    li {
         position: relative;
         display: block;
         width: 100%;
         height: auto;
-        margin: 0;
-        list-style: none;
+        background-color: #FFF;
+        padding: 20px 20px 20px 0;
+        margin: 0 auto 15px auto;
+        border-bottom: 1px solid #eee;
+        border-radius: 5px;
+        cursor: pointer;
 
-        li {
+        &.active {
+            h4 {
+                &:after {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+
+        h4 {
             position: relative;
             display: block;
             width: 100%;
             height: auto;
-            background-color: #FFF;
-            padding: 20px 20px 20px 0;
-            margin: 0 auto 15px auto;
-            border-bottom: 1px solid #eee;
-            border-radius: 5px;
+            padding: 0 0 0 0;
+            padding-right: 50px;
+            margin: 0;
+            letter-spacing: 0.01em;
             cursor: pointer;
 
-            &.active {
-                h4 {
-                    &:after {
-                        transform: rotate(45deg);
-                    }
-                }
+            &:after {
+                content: "";
+                font-family: "material-design-iconic-font";
+                position: absolute;
+                right: 0;
+                top: 0;
+                color: #Fcc110;
+                transition: all 0.3s ease-in-out;
+                font-size: 18px;
             }
 
-            h4 {
-                position: relative;
-                display: block;
-                width: 100%;
-                height: auto;
-                padding: 0 0 0 0;
-                padding-right: 50px;
-                margin: 0;
-                letter-spacing: 0.01em;
-                cursor: pointer;
-
-                &:after {
-                    content: "";
-                    font-family: "material-design-iconic-font";
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                    color: #Fcc110;
-                    transition: all 0.3s ease-in-out;
-                    font-size: 18px;
-                }
-
-                svg {
-                    width: 20px;
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                }
+            svg {
+                width: 20px;
+                position: absolute;
+                right: 0;
+                top: 0;
             }
+        }
 
-            div.answer {
+        div.answer {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: auto;
+            margin: 0;
+            padding: 0;
+            cursor: pointer;
+
+            p {
                 position: relative;
                 display: block;
-                width: 100%;
-                height: auto;
-                margin: 0;
-                padding: 0;
+                font-weight: 300;
+                padding: 10px 0 0 0;
                 cursor: pointer;
-
-                p {
-                    position: relative;
-                    display: block;
-                    font-weight: 300;
-                    padding: 10px 0 0 0;
-                    cursor: pointer;
-                    line-height: 150%;
-                    margin: 0 0 15px 0;
-                    font-size: 14px;
-                }
+                line-height: 150%;
+                margin: 0 0 15px 0;
+                font-size: 14px;
             }
         }
     }
@@ -1392,23 +1392,6 @@ body {
                 }
             }
         }
-
-        form {
-            margin-top: 45px;
-
-            input {
-                display: block;
-                width: 100%;
-                padding-bottom: 20px;
-                border: 0;
-                border-bottom: 1px solid $primary-color;
-                margin-bottom: 45px;
-
-                &::placeholder {
-                    color: $primary-color;
-                }
-            }
-        }
     }
 }
 
@@ -1519,41 +1502,9 @@ body {
             }
         }
     }
-
-    .comment {
-        form {
-            input {
-                width: 100%;
-                border: 0;
-                border-bottom: 1px solid $primary-color;
-                margin-bottom: 50px;
-                padding-bottom: 20px;
-
-                &::placeholder {
-                    color: $primary-color;
-                    font-weight: 500;
-                }
-            }
-
-            textarea {
-                width: 100%;
-                border: 0;
-                border-bottom: 1px solid $primary-color;
-                padding-bottom: 120px;
-
-                @include all-phone {
-                    padding-bottom: 40px;
-                }
-
-                &::placeholder {
-                    color: $primary-color;
-                    font-weight: 500;
-                }
-            }
-        }
-    }
 }
 
+// cart page
 .cart-section {
     .cart-title {
         text-align: center;
@@ -1576,7 +1527,7 @@ body {
                         display: flex;
                         align-items: center;
 
-                        
+
                         @include portrait-phone {
                             flex-direction: column;
                             align-items: flex-start;
@@ -1659,6 +1610,43 @@ body {
     .btn-group {
         .button3 {
             margin-right: 20px;
+        }
+    }
+}
+
+//faq-page-section
+.faq-page-section{
+    .faq-page-title{
+        text-align: center;
+        a{
+            color: $primary-color2;
+            &:hover{
+                color: $primary-color;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+//contact-section
+.contact-section{
+    .content-info{
+        p{
+            span{
+                margin-left: 20px;
+            }
+        }
+        .contact{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            .contact-value{
+                span{
+                    display: block;
+                    margin-bottom: 20px;
+                }
+            }
         }
     }
 }
